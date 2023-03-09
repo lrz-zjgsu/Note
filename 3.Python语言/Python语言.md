@@ -9,6 +9,64 @@
   解释性:源代码→字节码→机器码(运行时调用)
 4.编译器和解释器的语法标准
 
+### 基本数据结构速记
+
++ 字符串(string)
+  ```python
+  str_1="Hello,World!"
+  str_1[0]
+  "H" #索引
+  str_1[0:4:2]
+  "Hlo" #切片
+  len(str_1);max(str_1);min(str_1)
+  str_1.count("H") #计数
+  str_1.isupper();str_1.islower();str_1.isdigit() #判断大小写;判断数字
+  str_1.upper();str_1.lower() #改变大小写
+  str_1.strip();str_1.lstrip();str_1.rstrip() #去空格;去左侧空格;去右侧空格
+  str_1.replace(<老字符串>,<新字符串>) #替换
+  str_1.split(<分隔符>) #分隔,改为列表
+  ```
+
++ 列表(list)
+
+  ```python
+  list_1=[1,2,3,"a","b","c"]
+  索引和访问(index),切片(slice)
+  元素和搜索(search)
+  插入(insert),追加(append),扩展(extend)
+  删除(delete/pop)
+  排序(reserve/sort)
+  可变,不唯一
+  ```
+
++ 元组(tuple)
+
+  ```python
+  tuple_1=(1,2,3,4,5,)
+  索引(index),切片(slice)
+  不可变,不唯一
+  #核心是","
+  ```
+
++ 集合(set)
+
+  ```python
+  set_1={1,2,3,4,5}
+  #差集:-;并集:|;交集:&;对称差集:^
+  删除(remove)
+  添加(add/update)
+  可变,唯一,没有索引
+  
+  #空集合要用set(),注意数据类型转换
+  ```
+
++ 字典(dict)
+  ```python
+  dict_1={"a":1}
+  添加:dict_1[<键>]=<值>
+  删除:dict_1.pop(<键>);del dict_1[<键>]
+  ```
+
 ### 代码习惯和规则
 
 #### 1.注释
